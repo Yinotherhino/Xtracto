@@ -7,34 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
     <title>Xtracto</title>
 </head>
 <body>
-    <nav>
-        <div id="top-logo">
-            <h1>Xtracto</h1>
-        </div>
-        <div class="right">
-            <span>
-                Register
-            </span>
-            <span>
-                Log-in
-            </span>
-        </div>
-    </nav>
+    <!-- ===== Our Landing Page ===== -->
 
-    <main>
-        <img src="img/metadata.png" class="main-img">
-        <div class="btn-div">
-            <button class="btn">Register</button>
-            <button class="btn">Log-in</button>
+    <header> <!-- ===== This is the herobg ===== -->
+        <nav><!-- ===== This contains our navigation links ===== -->
+            <div class="logo top">
+                <h1>Xtracto</h1>
+            </div>
+            <ul class="middle">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>FAQs</a></li>
+            </ul>
+            <div class="right">
+                <a href="./pages/register.html">Register</a>
+                <a href="#">Log-in</a>
+            </div>
+        </nav>
+        <main>
+            <label for="file">Input file here</label>
+            <input type="file" name="file" id="file" accept="image/*, .pdf" multiple>
+        </main>
+    </header>
+        
 
-        </div>
-        <div class="btn-div">
-            <button class="doc-btn">DOCS</button>
-        </div>
-    </main>
+        
 </body>
 </html>

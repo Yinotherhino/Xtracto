@@ -1,0 +1,69 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F5F5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* =====  General Styling  ===== */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(167, 218, 220, 0.849), hsla(195, 24%, 56%, .70), hsl(215, 50%,23%), hsla(215, 50%, 23%, .82), hsla(215, 50%, 23%, 0.349));
+    background-size: cover;
+    color: #ffffff;
+    padding: 0 5em;
+}
+
+/* ====== Navigation block ====== */
+nav{
+    position: relative;
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 20px; */
+}
+.logo.top{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+.middle{
+    display: flex;
+    padding-left: 0;
+}
+.middle > li{
+    list-style: none;
+    padding: .5em;
+}
+.right{
+    word-spacing: 20px;
+    /* margin: 30px 50px 0 0; */
+    /* float: right; */
+    
+}
+/* 
+.main-img{
+    width: 100%;
+
+}
+.doc-btn, .btn {
+    -webkit-border-radius: 35;
+    -moz-border-radius: 35;
+    border-radius: 35px;
+    border-style: none;
+    color: #ff4949;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    background: #ffcd38;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 20px;
+} */

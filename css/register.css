@@ -1,0 +1,70 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F5F5;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-image: linear-gradient(to right, rgba(167, 218, 220, 0.849), hsla(195, 24%, 56%, .70), hsl(215, 50%,23%), hsla(215, 50%, 23%, .82), hsla(215, 50%, 23%, 0.349));
+    height: 100vh;
+    font-family: sans-serif;
+}
+.container{
+    padding: 0 5em;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* ====== Navigation block ====== */
+nav{
+    position: relative;
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo.top{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+.middle{
+    display: flex;
+    padding-left: 0;
+}
+.middle > li{
+    list-style: none;
+    padding: .5em;
+}
+.right{
+    word-spacing: 20px;
+    /* margin: 30px 50px 0 0; */
+    /* float: right; */
+    
+}
+
+
+
+/* ====== main content ====== */
+main{
+    display: flex;
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 3em;
+    gap: 2em;
+}
+main > *{
+    flex: 1 1 100%;
+}
+main > :last-child label,
+main > :last-child input
+{
+    width: 100%;
+    height: 40px;
+}
