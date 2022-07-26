@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form-container {
+  position: relative;
+  width: 90%;
+  max-width: 970px;
+  height: 500px;
+  /* background-color: #05130D; */
+  box-shadow: 6px 15px 22px -2px rgba(30, 30, 60, 0.24);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  margin: 6em auto;
+  /* to center the element*/
+  border-radius: 10px;
+  /* background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+  background: #4943b5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #403A3E, #6e65ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4943b5, #403A3E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  /* background-color: #5A655E; */
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+  border-radius: 6px;
+  background: #304352;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6b6a67, #304352);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #615f5e, #043052);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* using the common class "form" given to both sign-up and sign-in */
+
+.form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 6px; */
+}
+
+.form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  /* color: #ACA691; */
+  color: #fff;
+  text-align: center;
+}
+
+
+/* styling the form elements */
+form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-size: 1.05rem;
+  color: #fff;
+
+}
+
+input {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 1em;
+  border-radius: 7px;
+  /* border: 1px solid #e5e5e5; */
+  /* background-color: #ACA691; */
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+
+}
+
+button {
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 1.05rem;
+  padding: 1em 3.5em;
+  border-radius: 2em;
+  /* background-color: #095033; */
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  outline: none;
+  border: none;
+}
+
+
+
+button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+button:active {
+  color: #000
+}
+
+button:active:after {
+  background: transparent;
+}
+
+button:hover:before {
+  opacity: 1;
+}
+
+button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #111; */
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  background: #122432;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #777572, #304352);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7b7a79, #145180);
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+main button {
+  border: none;
+  margin: 1.5em 0;
+}
+
+aside div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+aside h2 {
+  font-size: 1.75rem;
+  color: #fff;
+  /* margin-left: 10px; */
+  text-align: center;
+}
+
+aside button {
+  /* border: 2px solid #fff; */
+  margin-top: 10rem;
+}
+
+#sign-up-btn {
+  margin-bottom: 3rem;
+}
+
+/* the initial sign-in form & sign-up block are not shown */
+main .sign-in-form,
+aside .sign-up-block {
+  display: none;
+}
+
+/* "slideRight" this class will be added when the button is clicked */
+main.slideRight {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+/* "slideLeft" this class will be added when the button is clicked */
+aside.slideLeft {
+  right: 100%;
+  transform: translateX(100%);
+}
+
+/* displaying sign-in form and blocking sign-up when button is clicked */
+main.slideRight .sign-in-form,
+aside.slideLeft .sign-up-block {
+  display: flex;
+}
+
+/* hiding sign-up form and sign-in block on button click */
+main.slideRight .sign-up-form,
+aside.slideLeft .sign-in-block {
+  display: none;
+}
+
+
+/* For Screen Responsiveness */
+
+@media screen and (max-width: 470px){
+  .form-container {
+    position: relative;
+    width: 88%;
+    max-width: 970px;
+    height: 500px;
+  }
+  
+  main {
+    width: 50%;
+    height: 100%;
+  }
+  
+  aside {
+    width: 38%;
+    height: 100%;
+  }
+  
+  
+  /* using the common class "form" given to both sign-up and sign-in */
+  
+  .form h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1em;
+    /* color: #ACA691; */
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  /* styling the form elements */
+ 
+  button {
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+  }
+  
+}
+
+@media screen and (max-width: 370px){
+  .form-container {
+    position: relative;
+    width: 88%;
+    max-width: 970px;
+    height: 500px;
+  }
+  
+  main {
+    width: 50%;
+    height: 100%;
+  }
+  
+  aside {
+    width: 40%;
+    height: 100%;
+  }
+  
+  
+  /* using the common class "form" given to both sign-up and sign-in */
+  
+  .form h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1em;
+  }
+  
+  
+  /* styling the form elements */
+ 
+  button {
+    font-size: 1rem;
+    padding: 0.5em 1.7em;
+    border-radius: 2em;
+  }
+  aside h2 {
+    font-size: 1.30rem;
+  }
+  
+}
