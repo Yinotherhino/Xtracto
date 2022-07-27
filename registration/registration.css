@@ -76,7 +76,7 @@ button[type=submit] {
 }
 
 .bottom-r {
-    width: 40%;
+    width: 30%;
     margin: auto;
     grid-area: c;
     padding: 2em;
