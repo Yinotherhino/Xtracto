@@ -1,0 +1,16 @@
+asgiref==3.5.2
+certifi==2022.6.15
+charset-normalizer==2.1.0
+distlib==0.3.4
+Django==4.0.4
+docopt==0.6.2
+filelock==3.7.0
+idna==3.3
+platformdirs==2.5.2
+requests==2.28.1
+six==1.16.0
+sqlparse==0.4.2
+tzdata==2022.1
+urllib3==1.26.11
+virtualenv==20.14.1
+yarg==0.1.9
